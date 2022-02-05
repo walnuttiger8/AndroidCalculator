@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/red"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="100dp"
+                android:textSize="15pt"
+                android:textColor="@color/green"
+                android:paddingHorizontal="2pt"
+                android:layout_margin="15dp"
+
+                android:id="@+id/mainInput"
+                />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginVertical="10dp"
+                android:text="@string/clear"
+                style="@style/InputButton"/>
+        </LinearLayout>
+
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="6"
+            android:layout_gravity="center">
+
+            <Button android:text="@string/_1"
+                style="@style/InputButton"
+                />
+            <Button android:text="@string/_2"
+                style="@style/InputButton"/>
+            <Button android:text="@string/_3"
+                style="@style/InputButton"/>
+            <Button android:text="@string/plus"
+                style="@style/InputButton"/>
+            <Button android:text="@string/_4"
+                style="@style/InputButton"/>
+            <Button android:text="@string/_5"
+                style="@style/InputButton"/>
+            <Button android:text="@string/_6"
+                style="@style/InputButton"/>
+            <Button android:text="@string/minus"
+                style="@style/InputButton"/>
+            <Button android:text="@string/_7"
+                style="@style/InputButton"/>
+            <Button android:text="@string/_8"
+                style="@style/InputButton"/>
+            <Button android:text="@string/_9"
+                style="@style/InputButton"/>
+            <Button android:text="@string/multiply"
+                style="@style/InputButton"/>
+            <Button android:text="@string/_0"
+                style="@style/InputButton"/>
+            <Button android:text="@string/equal"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill"
+                style="@style/InputButton"/>
+            <Button android:text="@string/divide"
+                style="@style/InputButton"/>
+        </GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>
